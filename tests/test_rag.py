@@ -1,5 +1,5 @@
-import pytest
-from unittest.mock import Mock, patch
+from unittest.mock import patch
+
 
 def test_team_knowledge_base_init():
     """Test TeamKnowledgeBase initialization."""
@@ -9,6 +9,7 @@ def test_team_knowledge_base_init():
             kb = TeamKnowledgeBase()
             assert kb.documents == []
             assert kb.chunks == []
+
 
 def test_ask_without_index():
     """Test asking without initialized index."""
