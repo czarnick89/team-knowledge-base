@@ -19,9 +19,9 @@ def main():
     
     # Test questions
     questions = [
-        "What is Python?",
-        "How do you deploy to AWS?",
-        "What is RAG?"
+        "What is progressive overload?",
+        "How much protein do I need?",
+        "What is complete protein?"
     ]
     
     print("\n" + "=" * 50)
