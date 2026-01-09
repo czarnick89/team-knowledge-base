@@ -1,0 +1,64 @@
+name: Test
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      
+      - name: Install flake8
+        run: pip install flake8
+      
+      - name: Run linting
+        run: flake8 src/ tests/ --max-line-length=100
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Run tests
+        run: pytest tests/ -v
+
+  verify-knowledge-base:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Count documents
+        run: |
+          DOC_COUNT=$(ls -1 knowledge_base/*.txt 2>/dev/null | wc -l)
+          echo "Found $DOC_COUNT documents"
+          if [ "$DOC_COUNT" -lt 4 ]; then
+            echo "Error: Need at least 4 documents (2 per team member minimum)"
+            exit 1
+          fi
+      
+      - name: Verify document format
+        run: |
+          for file in knowledge_base/*.txt; do
+            if ! head -1 "$file" | grep -q "^---"; then
+              echo "Error: $file missing metadata header"
+              exit 1
+            fi
+          done
+          echo "All documents have metadata headers"

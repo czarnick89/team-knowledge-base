@@ -1,0 +1,15 @@
+---
+Author: Nick OBrien
+Date: 2026-1-8
+Topic: Protein Intake
+Summary: Optimal protein intake for weightlifting adults.
+---
+Protein intake is a foundational variable in resistance training outcomes, directly influencing muscle protein synthesis (MPS), recovery, and long-term hypertrophy. For weightlifters, optimal protein consumption is not merely about total daily intake, but also about distribution, quality, and timing.
+
+Current evidence supports a daily protein intake of approximately 1.6–2.2 grams per kilogram of body weight for individuals engaged in regular resistance training. Intakes below this range may limit gains in lean mass, while intakes significantly above it show diminishing returns for muscle growth in most individuals. Heavier lifters, those in a caloric deficit, or athletes training at high volumes may benefit from targeting the upper end of this range to preserve muscle mass.
+
+Protein quality is also critical. Complete proteins—those containing all essential amino acids—are most effective at stimulating MPS. Animal-based sources such as lean meats, eggs, dairy, and whey protein are particularly rich in leucine, an amino acid that plays a key regulatory role in initiating muscle protein synthesis. Plant-based lifters can achieve comparable results by combining complementary protein sources and ensuring adequate total intake.
+
+Equally important is protein distribution across the day. Research suggests that consuming 20–40 grams of high-quality protein per meal, spread across 3–5 meals, maximizes MPS more effectively than skewing intake toward a single large meal. Including protein in the post-workout window is beneficial, though total daily intake remains the dominant factor.
+
+In summary, weightlifters should prioritize sufficient total protein intake, emphasize high-quality sources, and distribute protein evenly throughout the day. When aligned with progressive training and adequate caloric intake, optimal protein consumption significantly enhances strength development, recovery, and muscular adaptation. 
